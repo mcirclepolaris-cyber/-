@@ -2940,7 +2940,9 @@
         .assurance-list,
         .detail-hub,
         .timeline,
-        .space-grid,
+        .space-grid {
+          grid-template-columns: 1fr;
+        }
 
         .detail-presets {
           gap: 6px;
@@ -2958,7 +2960,7 @@
 
         .proof,
         .step {
-          min-height: 230px;
+          min-height: 190px;
         }
 
         .service-card {
@@ -3133,6 +3135,97 @@
           font-size: 12px;
         }
 
+        /* Mobile dock stays readable */
+        body.is-flow-active .dock,
+        body.variant-dark.is-flow-active .dock {
+          left: 14px;
+          right: 14px;
+          bottom: 12px;
+          opacity: 1;
+          transform: none;
+          pointer-events: auto;
+        }
+        /* Mobile content fit fixes */
+        .proof-grid {
+          gap: 10px;
+        }
+
+        .proof {
+          min-height: 178px;
+          padding: 18px;
+          display: grid;
+          align-content: space-between;
+        }
+
+        .proof strong {
+          max-width: calc(100% - 82px);
+          margin-bottom: 42px;
+          font-size: clamp(31px, 11vw, 44px);
+          line-height: 0.96;
+          word-break: keep-all;
+        }
+
+        .proof p {
+          max-width: 100%;
+          margin: 0;
+          font-size: 16px;
+          line-height: 1.42;
+          word-break: keep-all;
+          overflow-wrap: anywhere;
+        }
+
+        .proof .icon-slot {
+          top: 16px;
+          right: 16px;
+          width: 76px;
+          height: 76px;
+          border-radius: 18px;
+        }
+
+        .proof .icon-slot::before {
+          width: 40px;
+          height: 40px;
+        }
+
+        .space-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 14px;
+          overflow: visible;
+        }
+
+        .space-card {
+          width: 100%;
+          min-height: 420px;
+          aspect-ratio: auto;
+          transform: none !important;
+        }
+
+        .space-caption {
+          left: 18px;
+          right: 18px;
+          bottom: 22px;
+        }
+
+        .space-caption strong {
+          font-size: clamp(24px, 8vw, 34px);
+          line-height: 1.08;
+          word-break: keep-all;
+        }
+
+        .space-caption p {
+          font-size: 16px;
+          line-height: 1.52;
+          word-break: keep-all;
+          overflow-wrap: anywhere;
+        }
+
+        .mobile-collapse-toggle {
+          position: relative;
+          z-index: 6;
+          margin-bottom: 18px;
+        }
+
         .hero-stage {
           min-height: 810px;
         }
@@ -3204,7 +3297,7 @@
         }
       }
     </style>
-  
+
     <style>
       main { display: flex; flex-direction: column; }
       body.variant-classic .cinematic-flow,
