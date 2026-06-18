@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>오시는 길 | 베스트온 내과검진센터</title>
+    <link rel="stylesheet" href="detail.css" />
+    <style>
+      .hero-art {
+        --page-image: var(--hero-img);
+      }
+
+      .mapbox {
+        min-height: 420px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background:
+          linear-gradient(90deg, rgba(23, 33, 29, 0.08) 1px, transparent 1px),
+          linear-gradient(rgba(23, 33, 29, 0.08) 1px, transparent 1px),
+          #e6eee8;
+        background-size: 42px 42px;
+        position: relative;
+      }
+
+      .mapbox::after {
+        content: "청량리역 3번 출구 도보 3분";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 12px 16px;
+        border-radius: 999px;
+        background: var(--ink);
+        color: var(--paper);
+        font-weight: 500;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="mark"></span>베스트온 내과검진센터</a>
+      <div class="nav-links">
+        <a href="doctors.html">의료진</a>
+        <a href="checkup.html">건강검진</a>
+        <a href="endoscopy.html">내시경</a>
+        <a href="reservation.html">예약</a>
+      </div>
+      <a class="nav-cta" href="reservation.html">예약</a>
+    </nav>
+
+    <main>
+      <section class="page-hero">
+        <div data-fade>
+          <p class="eyebrow">LOCATION</p>
+          <h1>예약 전 가장 많이 찾는 정보는 위치와 진료시간입니다</h1>
+          <p class="lead">지도, 주차, 대중교통, 진료시간, 전화 연결, 방문 전 준비사항을 한 화면에서 확인할 수 있습니다.</p>
+          <div class="quick-panel">
+            <a href="#map">지도</a>
+            <a href="#hours">진료시간</a>
+            <a href="reservation.html">예약</a>
+          </div>
+        </div>
+        <div class="hero-art" data-fade></div>
+      </section>
+
+      <section class="section" id="map">
+        <div class="section-head" data-fade>
+          <h2>오시는 길</h2>
+          <p>실서비스에서는 네이버/카카오 지도 API, 건물 외관, 주차장 입구 사진을 연결합니다.</p>
+        </div>
+        <div class="route-tabs" data-fade>
+          <button class="active" type="button" data-route="subway">지하철</button>
+          <button type="button" data-route="parking">자가용·주차</button>
+          <button type="button" data-route="bus">버스</button>
+        </div>
+        <div class="info-grid">
+          <div class="mapbox" data-fade data-route-label="청량리역 3번 출구 도보 3분"></div>
+          <div class="card" data-fade>
+            <strong>ROUTE</strong>
+            <h3>방문 안내</h3>
+            <p id="route-result" class="route-result">지하철 이용 시 청량리역 3번 출구에서 직진 후 횡단보도를 건너면 병원 건물 입구가 보입니다.</p>
+          </div>
+          <div class="card" data-fade>
+            <strong>CALL</strong>
+            <h3>방문 전 확인</h3>
+            <p>검진센터와 내시경센터는 예약제 중심으로 운영됩니다. 검사 전 금식이나 약 복용 안내가 필요한 경우 전화 상담을 권장합니다.</p>
+          </div>
+        </div>
+        <div class="location-brief-grid">
+          <article class="location-brief" data-fade>
+            <strong>01</strong>
+            <h3>지하철 이용</h3>
+            <p>청량리역 3번 출구 기준으로 안내합니다. 출구에서 병원 건물까지의 횡단보도, 엘리베이터 위치를 실서비스에서 사진으로 연결합니다.</p>
+          </article>
+          <article class="location-brief" data-fade>
+            <strong>02</strong>
+            <h3>자가용·주차</h3>
+            <p>건물 지하주차장 진입 후 접수 데스크에서 차량번호를 등록합니다. 내시경·검진 예약자는 예상 체류시간을 사전에 안내받습니다.</p>
+          </article>
+          <article class="location-brief" data-fade>
+            <strong>03</strong>
+            <h3>도착 후 접수</h3>
+            <p>예약자 확인, 신분증 확인, 문진표 작성, 복용약 확인 순서로 진행합니다. 수면검사는 보호자 또는 귀가 방법을 함께 확인합니다.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-head" data-fade>
+          <h2>처음 방문하는 분을 위한 안내</h2>
+          <p>건물 입구, 주차, 접수 위치를 미리 확인하면 처음 방문할 때 더 편합니다.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="card" data-fade><span class="icon-slot icon-checkin" aria-hidden="true"></span><strong>입구</strong><h3>건물 입구</h3><p>엘리베이터 위치, 병원 층수, 접수 데스크 위치를 사진과 함께 안내하면 첫 방문자의 불안이 줄어듭니다.</p></article>
+          <article class="card" data-fade><span class="icon-slot icon-checkin" aria-hidden="true"></span><strong>주차</strong><h3>주차 등록</h3><p>건물 지하주차장 이용 후 접수 데스크에서 차량번호를 등록합니다. 만차 시 인근 주차 안내를 제공합니다.</p></article>
+          <article class="card" data-fade><span class="icon-slot icon-checkin" aria-hidden="true"></span><strong>접수</strong><h3>검진 접수</h3><p>신분증, 공단검진표, 이전 결과지, 복용약 목록을 접수 시 확인합니다.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="hours">
+        <div class="section-head" data-fade>
+          <h2>진료시간과 주차 안내</h2>
+          <p>모바일에서 바로 전화할 수 있게 CTA를 고정합니다.</p>
+        </div>
+        <ul class="list" data-fade>
+          <li>평일 09:00 - 18:30</li>
+          <li>점심 13:00 - 14:00</li>
+          <li>토요일 09:00 - 13:00</li>
+          <li>일요일·공휴일 휴진</li>
+          <li>건물 지하주차장 이용 가능</li>
+          <li>검진센터는 예약제 운영</li>
+        </ul>
+      </section>
+      <section class="section">
+        <div class="section-head" data-fade>
+          <h2>방문 목적별 권장 도착 시간</h2>
+          <p>검사 준비가 필요한 예약은 도착 시간이 전체 경험을 좌우합니다.</p>
+        </div>
+        <div class="detail-table" data-fade>
+          <div class="detail-row">
+            <strong>일반 진료</strong>
+            <span>예약 시간 10분 전 도착을 권장합니다. 초진은 문진과 접수 시간이 추가될 수 있습니다.</span>
+          </div>
+          <div class="detail-row">
+            <strong>공단검진</strong>
+            <span>신분증과 검진 대상 확인이 필요하므로 예약 시간 15분 전 도착을 권장합니다.</span>
+          </div>
+          <div class="detail-row">
+            <strong>종합검진</strong>
+            <span>검사 항목 확인과 동선 안내가 필요해 예약 시간 20분 전 도착하면 일정이 안정적입니다.</span>
+          </div>
+          <div class="detail-row">
+            <strong>수면내시경</strong>
+            <span>금식 상태, 동의서, 보호자 또는 귀가 방법 확인이 필요해 여유 있게 방문하는 것이 좋습니다.</span>
+          </div>
+        </div>
+      </section>
+      <section class="section"><div class="section-head" data-fade><h2>방문 전 체크리스트</h2><p>길찾기 페이지에는 환자가 방문 직전에 필요한 정보를 모아두는 것이 좋습니다.</p></div><div class="detail-table" data-fade><div class="detail-row"><strong>검진 방문</strong><span>공단검진표, 신분증, 과거 검사결과지, 복용약 목록을 준비해 주세요.</span></div><div class="detail-row"><strong>내시경 방문</strong><span>금식, 장정결제 복용, 보호자 동행 여부를 사전에 확인해 주세요.</span></div><div class="detail-row"><strong>주차 안내</strong><span>건물 지하주차장 이용 후 접수 데스크에서 차량번호를 등록합니다.</span></div><div class="detail-row"><strong>지각 안내</strong><span>검사 준비가 필요한 예약은 지연 시 순서가 조정될 수 있어 미리 연락해 주세요.</span></div></div></section>
+      <section class="section"><div class="cta-band" data-fade><div><h2>방문 전 준비가 필요한 검사라면 먼저 전화해 주세요</h2><p>내시경, 공복검사, 초음파, 종합검진은 준비사항에 따라 당일 진행 가능 여부가 달라질 수 있습니다.</p></div><a class="button" href="tel:0212345678">전화 문의</a></div></section>
+    </main>
+
+    <aside class="dock">
+      <strong>길찾기</strong>
+      <a class="primary" href="tel:0212345678">전화</a>
+      <a href="reservation.html">예약</a>
+      <a href="reservation.html">상담</a>
+      <a href="#map">지도</a>
+    </aside>
+
+    <script src="detail.js"></script>
+  </body>
+</html>

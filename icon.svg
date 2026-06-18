@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Beston clinic icon">
+  <defs>
+    <linearGradient id="bg" x1="84" y1="70" x2="430" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fffdf7"/>
+      <stop offset=".45" stop-color="#e8f2ec"/>
+      <stop offset="1" stop-color="#d9ece3"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="124" y1="110" x2="390" y2="408" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1f6b52"/>
+      <stop offset=".55" stop-color="#2f657d"/>
+      <stop offset="1" stop-color="#b28b53"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="386" cy="126" r="58" fill="#f0c982" opacity=".55"/>
+  <path fill="url(#mark)" d="M151 132h210c21 0 38 17 38 38v42c0 18-12 33-29 37 17 5 29 20 29 38v55c0 21-17 38-38 38H151c-21 0-38-17-38-38V170c0-21 17-38 38-38Zm35 69v45h138c12 0 22-10 22-22s-10-23-22-23H186Zm0 111v47h149c13 0 23-10 23-23s-10-24-23-24H186Z"/>
+  <path fill="#fffdf7" d="M241 178h30v63h63v30h-63v63h-30v-63h-63v-30h63v-63Z" opacity=".92"/>
+</svg>
