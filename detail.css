@@ -31,10 +31,13 @@
   --rose: #c66e5d;
   --soft: #e8f2ec;
   --shadow: 0 26px 80px rgba(23, 33, 29, 0.16);
-  --hero-img: url("https://d8j0ntlcm91z4.cloudfront.net/user_3Et9cTNPPa8Yk4cz5eaVjnU2p6w/hf_20260612_212903_4a3e4082-d2e4-494d-880e-e32da5b94f2b.png");
-  --endo-img: url("https://d8j0ntlcm91z4.cloudfront.net/user_3Et9cTNPPa8Yk4cz5eaVjnU2p6w/hf_20260612_212900_b4f726ba-aaf9-417c-8429-196251725e2b.png");
-  --recovery-img: url("https://d8j0ntlcm91z4.cloudfront.net/user_3Et9cTNPPa8Yk4cz5eaVjnU2p6w/hf_20260612_212901_91dc5ebd-e91a-4ccb-a710-33432f91af7d.png");
-  --consult-img: url("https://d8j0ntlcm91z4.cloudfront.net/user_3Et9cTNPPa8Yk4cz5eaVjnU2p6w/hf_20260612_212902_d44a42ba-6905-4c55-b6b6-b9a251d828b2.png");
+  --hero-img: url("assets/medical/doctor-team.jpg");
+  --endo-img: url("assets/medical/endoscopy-room.jpg");
+  --recovery-img: url("assets/medical/recovery-room.jpg");
+  --consult-img: url("assets/medical/consultation-doctor.jpg");
+  --ultra-img: url("assets/medical/doctor-tablet.jpg");
+  --wellness-img: url("assets/medical/wellness-skin.jpg");
+  --vaccine-img: url("assets/medical/vaccination.jpg");
 }
 
 * {
@@ -337,8 +340,8 @@ h1 {
 }
 
 .icon-ultra::before {
-  -webkit-mask-image: url("assets/icons/ultra.svg");
-  mask-image: url("assets/icons/ultra.svg");
+  -webkit-mask-image: url("assets/icons/ultrasonography.png");
+  mask-image: url("assets/icons/ultrasonography.png");
 }
 
 .icon-chronic::before {
@@ -363,8 +366,15 @@ h1 {
 .icon-recovery::before {
   width: 66px;
   height: 66px;
-  -webkit-mask-image: url("assets/icons/recovery.png");
-  mask-image: url("assets/icons/recovery.png");
+  -webkit-mask-image: url("assets/icons/iv-drip.png");
+  mask-image: url("assets/icons/iv-drip.png");
+}
+
+.icon-vip::before {
+  width: 74px;
+  height: 74px;
+  -webkit-mask-image: url("assets/icons/vip-room-user.png");
+  mask-image: url("assets/icons/vip-room-user.png");
 }
 
 .icon-stomach::before {
